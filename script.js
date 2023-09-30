@@ -64,7 +64,7 @@ function getEventTarget(e) {
     return e.target || e.srcElement; 
 }
 
-var ul = document.getElementById('myList');
+var ul = document.getElementById('search-history');
 ul.onclick = function(event) {
     var target = getEventTarget(event);
     getImage(target.innerHTML);
