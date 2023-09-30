@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+}
+
+.showData{
+    background-color: black;
+    padding: 5px;
+    color: white;
+    display: grid;
+}
+.showData>h1,p{
+    padding: 10px 5px;
+}
+.showData>img{
+    width: 100%;
+}
+.search-box{
+    margin: 10px;
+}
+.search-box>label{
+    padding: 5px;
+}
+#search{
+    border: 1px solid grey;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+.prev-searches{
+    margin: 10px;
+    padding: 10px 0;
+}
+#search-history>li{
+    color: rgb(32, 32, 142);
+    text-decoration: underline;
+}
+#search-history>li:hover{
+    cursor: pointer;
+}
