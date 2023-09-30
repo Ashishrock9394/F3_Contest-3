@@ -6,18 +6,12 @@ const getImageOfTheDay = document.getElementById("search");
 function getCurrentImageOfTheDay() {
     var date = new Date().toJSON().slice(0, 10);
     getImage(date);
-    saveSearch(date);
 }
 
 getImageOfTheDay.addEventListener('click', function () {
     const date = searchDate.value;
     const pic = document.getElementById("pic");
 
-    if (date ===  new Date().toJSON().slice(0, 10)){
-        pic.innerHTML = "Nasa Picture of the Day";
-    }else{
-        pic.innerHTML = "Nasa Picture on " + date;
-    }
 
     getImage(date);
     saveSearch(date);
@@ -40,6 +34,13 @@ function showData(data) {
     image.src = data.url;
     title.innerHTML = data.title;
     content.innerHTML = data.explanation;
+
+    if (data.date ===  new Date().toJSON().slice(0, 10)){
+        pic.innerHTML = "Nasa Picture of the Day";
+    }else{
+        pic.innerHTML = "Nasa Picture on " + data.date;
+    }
+    
 }
 
 let storedDate = [];
