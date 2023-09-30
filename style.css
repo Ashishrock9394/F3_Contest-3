@@ -4,18 +4,19 @@
 
 .showData{
     background-color: black;
-    padding: 5px;
+    padding: 10px;
     color: white;
     display: grid;
 }
 .showData>h1,p{
-    padding: 10px 5px;
+    padding: 10px 20px 0 20px;
 }
 .showData>img{
     width: 100%;
+    padding: 20px;
 }
 .search-box{
-    margin: 10px;
+    margin: 20px;
 }
 .search-box>label{
     padding: 5px;
@@ -26,7 +27,7 @@
     border-radius: 5px;
 }
 .prev-searches{
-    margin: 10px;
+    margin: 20px;
     padding: 10px 0;
 }
 #search-history>li{

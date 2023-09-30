@@ -33,14 +33,14 @@ function showData(data) {
     const content = document.getElementById("content");
     image.src = data.url;
     title.innerHTML = data.title;
-    content.innerHTML = data.explanation;
+    content.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + data.explanation;
 
     if (data.date ===  new Date().toJSON().slice(0, 10)){
         pic.innerHTML = "Nasa Picture of the Day";
     }else{
         pic.innerHTML = "Nasa Picture on " + data.date;
     }
-    
+
 }
 
 let storedDate = [];
